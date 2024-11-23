@@ -7,9 +7,15 @@
     "module": "ESNext",
     "skipLibCheck": true,
 
-    "baseUrl": ".",
+    "baseUrl": "src",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./*"],
+      "@routes/*": ["./routes/*"],
+      "@pages/*": ["./pages/*"],
+      "@components/*": ["./components/*"],
+      "@layouts/*": ["./layouts/*"],
+      "@lib/*": ["./lib/*"],
+      "@assets/*": ["./assets/*"]
     },
 
     /* Bundler mode */
