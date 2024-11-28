@@ -51,8 +51,8 @@ const Products = () => {
               onClick={() => setActiveFilter(filter)}
               className={`border-2 px-6 py-2 rounded-3xl transition-all duration-500 ${
                 activeFilter === filter
-                  ? "border-sunset-orange bg-[#324700] text-white"
-                  : "border-[#e0e0df] text-[#888888] hover:border-sunset-orange hover:bg-[#324700] hover:text-white"
+                  ? "border-sunset-orange bg-custom-green text-white"
+                  : "border-[#e0e0df] text-[#888888] hover:border-sunset-orange hover:bg-custom-green hover:text-white"
               }`}
             >
               {filter}

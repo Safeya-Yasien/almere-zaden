@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         "sunset-orange": "#fba43d",
+        "custom-green": "#324700",
       },
       container: {
         center: true,

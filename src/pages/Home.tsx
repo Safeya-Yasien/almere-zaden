@@ -1,4 +1,10 @@
-import { Categories, Hero, Products, Vision } from "@/components/almereZaden";
+import {
+  Categories,
+  Hero,
+  LatestNews,
+  Products,
+  Vision,
+} from "@/components/almereZaden";
 
 const Home = () => {
   return (
@@ -8,6 +14,7 @@ const Home = () => {
         <Categories />
         <Products />
         <Vision />
+        <LatestNews />
       </div>
     </>
   );

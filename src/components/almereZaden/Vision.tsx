@@ -2,7 +2,7 @@ import goal from "@assets/images/goal.jpg";
 
 const Vision = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6 ">
+    <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6 px-6 md:px-24">
       <div className="flex justify-center">
         <img
           src={goal}
@@ -12,7 +12,7 @@ const Vision = () => {
       </div>
 
       <div className="flex flex-col justify-center items-start space-y-6">
-        <h2 className="text-[40px] font-bold text-gray-800 mb-4 text-[#145333]">
+        <h2 className="text-[40px] font-bold mb-4 text-[#145333]">
           Our Goals
         </h2>
 
