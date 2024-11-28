@@ -2,13 +2,12 @@ import aboutBg from "@assets/images/about-bg.webp";
 import about from "@assets/images/about.webp";
 const About = () => {
   return (
-    <>
       <div
         className="bg-cover bg-center h-100 mb-5"
         style={{ backgroundImage: `url(${aboutBg})` }}
       >
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6 ">
-          <div className="sm:px-24 pt-5">
+          <div className="px-6 md:px-24 pt-5">
             <h2 className="text-sunset-orange text-[30px] font-bold mb-5">
               About Us
             </h2>
@@ -34,7 +33,6 @@ const About = () => {
           </div>
         </div>
       </div>
-    </>
   );
 };
 export default About;
