@@ -65,11 +65,7 @@ const Products = () => {
       <div className="">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  mt-12 gap-x-8 gap-y-12">
           {products.map((product) => (
-            <Link
-              to={`/product/${product.id}`}
-              key={product.id}
-              className="flex flex-col gap-4"
-            >
+            <Link to="" key={product.id} className="flex flex-col gap-4">
               <div className="relative w-full h-60">
                 <img
                   src={product.image}
