@@ -36,7 +36,7 @@ const LatestNews = () => {
       </div>
 
       {/* News 2: Text first, image beside it */}
-      <div className="flex flex-col md:flex-row-reverse items-center justify-between mb-12 gap-8">
+      <div className="flex flex-col md:flex-row-reverse items-center justify-between mb-12 gap-8 text-right">
         <div className="w-full md:w-1/2">
           <img
             src={newsImage2}
