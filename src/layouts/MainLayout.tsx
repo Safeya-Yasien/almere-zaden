@@ -3,9 +3,11 @@ import { Outlet } from "react-router-dom";
 
 const MainLayout = () => {
   return (
-    <div>
+    <div className="h-screen">
       <Header />
-      <Outlet />
+      <main className="">
+        <Outlet />
+      </main>
       <Footer />
     </div>
   );
