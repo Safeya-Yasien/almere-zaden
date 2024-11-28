@@ -44,7 +44,7 @@ const Products = () => {
       <CustomTitle title="Trending Products" desc="Lorem ipsum dolor" />
 
       {/* Filter Buttons */}
-      <ul className="flex items-center justify-center gap-4">
+      <ul className="flex items-center justify-center flex-wrap gap-4">
         {filters.map((filter) => (
           <li key={filter}>
             <button
