@@ -10,6 +10,10 @@ export default {
         center: true,
         padding: "2rem",
       },
+      fontFamily: {
+        roboto: ["Roboto", "sans-serif"],
+        philosopher: ["Philosopher", "sans-serif"],
+      },
     },
   },
   plugins: [],

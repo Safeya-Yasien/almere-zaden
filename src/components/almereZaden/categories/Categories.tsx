@@ -22,26 +22,23 @@ const Categories = () => {
     breakpoints: {
       0: {
         slidesPerView: 1,
-        spaceBetween: 10, // Adjust for small screens
+        spaceBetween: 10,
       },
-      // Medium screens (md)
       576: {
         slidesPerView: 2,
-        spaceBetween: 20, // Adjust for medium screens
+        spaceBetween: 20,
       },
       768: {
         slidesPerView: 3,
-        spaceBetween: 20, // Adjust for medium screens
+        spaceBetween: 20,
       },
-      // Large screens (lg)
       1024: {
         slidesPerView: 4,
-        spaceBetween: 30, // Adjust for large screens
+        spaceBetween: 30,
       },
-      // Extra-large screens (xl)
       1280: {
         slidesPerView: 5,
-        spaceBetween: 40, // Adjust for extra-large screens
+        spaceBetween: 40,
       },
     },
     className: "w-full max-w-7xl py-8",

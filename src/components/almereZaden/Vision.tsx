@@ -2,7 +2,7 @@ import goal from "@assets/images/goal.jpg";
 
 const Vision = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 items-center px-8 py-12 gap-6 mt-[150px]">
+    <div className="grid grid-cols-1 md:grid-cols-2 items-center px-8 py-12 gap-6 ">
       <div className="flex justify-center">
         <img
           src={goal}
