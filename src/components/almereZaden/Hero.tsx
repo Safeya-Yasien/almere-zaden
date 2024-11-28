@@ -7,14 +7,11 @@ import swiper2 from "@assets/images/swiper7.jpg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
-import "swiper/css";
+import "swiper/css" ;
 import "swiper/css/navigation";
 
-// import required modules
 import { Navigation } from "swiper/modules";
 
-// Slider component
 const Hero = () => {
   return (
     <Swiper
@@ -45,7 +42,7 @@ const Hero = () => {
 };
 export default Hero;
 
-const SwiperSlice = ({ image, text }) => {
+const SwiperSlice = ({ image, text }: {image:string, text:string}) => {
   return (
     <div className="relative">
       <img src={image} alt="swiper1" className="w-full h-[90vh] object-cover" />
