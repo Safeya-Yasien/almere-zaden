@@ -45,7 +45,7 @@ const Categories = () => {
   };
 
   return (
-    <div className=" -mt-[100px] px-4  ">
+    <div className=" -mt-[100px] px-6 md:px-24   ">
       <Swiper {...swiperSettings}>
         <SwiperSlide>
           <Link

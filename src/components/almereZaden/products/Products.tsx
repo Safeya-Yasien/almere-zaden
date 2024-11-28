@@ -39,7 +39,7 @@ const Products = () => {
   const filters = ["Featured", "Latest", "Bestseller"];
 
   return (
-    <div className="py-8">
+    <div className="py-8 px-6 md:px-24">
       {/* Custom Title */}
       <CustomTitle title="Trending Products" desc="Lorem ipsum dolor" />
 
