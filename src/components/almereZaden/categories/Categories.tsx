@@ -41,11 +41,11 @@ const Categories = () => {
         spaceBetween: 40,
       },
     },
-    className: "w-full max-w-7xl py-8",
+    className: "w-full max-w-7xl py-8 px-2",
   };
 
   return (
-    <div className=" -mt-[100px] px-4 ">
+    <div className=" -mt-[100px] px-4  ">
       <Swiper {...swiperSettings}>
         <SwiperSlide>
           <Link
