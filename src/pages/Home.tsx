@@ -1,6 +1,14 @@
+import { Categories, Hero, Services, Vision } from "@/components/almereZaden";
+
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
-export default Home
+    <div>
+      <Hero />
+      <Categories/>
+      <Services/>
+      <Vision />
+
+    </div>
+  );
+};
+export default Home;
