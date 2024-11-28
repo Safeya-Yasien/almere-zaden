@@ -6,3 +6,10 @@
     --radius: 0.5rem;
   }
 }
+
+.swiper-pagination-bullet {
+  @apply border-white bg-white w-4 h-4 rounded-full;
+}
+.swiper-pagination-bullet-active {
+  @apply bg-[#fba43d];
+}
