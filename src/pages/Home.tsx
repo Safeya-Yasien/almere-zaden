@@ -1,13 +1,12 @@
-import { Categories, Hero, Services, Vision } from "@/components/almereZaden";
+import { Categories, Hero, Products, Vision } from "@/components/almereZaden";
 
 const Home = () => {
   return (
     <div>
       <Hero />
-      <Categories/>
-      <Services/>
+      <Categories />
+      <Products />
       <Vision />
-
     </div>
   );
 };
