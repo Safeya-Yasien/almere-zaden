@@ -17,7 +17,7 @@ const Hero = () => {
     <Swiper
       spaceBetween={30}
       modules={[Navigation]}
-      className="w-[100%] h-[84vh] m-0"
+      className="w-[100%] h-[70vh] m-0"
     >
       <SwiperSlide>
         <SwiperSlice image={swiper1} text={"Title 1"} />
