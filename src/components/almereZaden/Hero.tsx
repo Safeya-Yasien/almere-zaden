@@ -7,7 +7,7 @@ import swiper2 from "@assets/images/swiper7.jpg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import "swiper/css" ;
+import "swiper/css";
 import "swiper/css/navigation";
 
 import { Navigation } from "swiper/modules";
@@ -16,40 +16,60 @@ const Hero = () => {
   return (
     <Swiper
       spaceBetween={30}
+      navigation={true}
       modules={[Navigation]}
       className="w-[100%] h-[70vh] m-0"
     >
       <SwiperSlide>
-        <SwiperSlice image={swiper1} text={"Title 1"} />
+        <SwiperSlice
+          image={swiper1}
+          text={"Welcome to the Zucchini Seeds section of Almere Zaden"}
+        />
       </SwiperSlide>
       <SwiperSlide>
-        <SwiperSlice image={swiper2} text={"Title 2"} />
+        <SwiperSlice
+          image={swiper2}
+          text={"Almere Zaden: Mission, Vision, and Goals"}
+        />
       </SwiperSlide>
       <SwiperSlide>
-        <SwiperSlice image={swiper3} text={"Title 3"} />
+        <SwiperSlice
+          image={swiper3}
+          text={"Welcome to the Zucchini Seeds section of Almere Zaden"}
+        />
       </SwiperSlide>
       <SwiperSlide>
-        <SwiperSlice image={swiper4} text={"Title 4"} />
+        <SwiperSlice
+          image={swiper4}
+          text={"Almere Zaden: Mission, Vision, and Goals"}
+        />
       </SwiperSlide>
       <SwiperSlide>
-        <SwiperSlice image={swiper5} text={"Title 5"} />
+        <SwiperSlice
+          image={swiper5}
+          text={"Welcome to the Zucchini Seeds section of Almere Zaden"}
+        />
       </SwiperSlide>
       <SwiperSlide>
-        <SwiperSlice image={swiper6} text={"Title 6"} />
+        <SwiperSlice
+          image={swiper6}
+          text={"Welcome to the Zucchini Seeds section of Almere Zaden"}
+        />
       </SwiperSlide>
     </Swiper>
   );
 };
 export default Hero;
 
-const SwiperSlice = ({ image, text }: {image:string, text:string}) => {
+const SwiperSlice = ({ image, text }: { image: string; text: string }) => {
   return (
     <div className="relative">
       <img src={image} alt="swiper1" className="w-full h-[90vh] object-cover" />
-      {/* Light overlay on text */}
       <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
         <div className="p-4 rounded-md">
-          <h2 className="text-white text-4xl font-bold">{text}</h2>
+          <h2 className="text-white text-4xl font-bold text-center lg:w-[90%] ">
+            {text}
+          </h2>
         </div>
       </div>
     </div>

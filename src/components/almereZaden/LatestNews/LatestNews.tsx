@@ -6,7 +6,7 @@ const LatestNews = () => {
   const currentDate = new Date().toLocaleDateString();
 
   return (
-    <div className="px-6 md:px-24">
+    <div className=" px-6 md:px-24">
       <CustomTitle title="Latest News" desc="Our Plant House" />
 
       {/* News 1: Image beside the text */}

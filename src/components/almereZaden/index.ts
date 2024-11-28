@@ -4,7 +4,10 @@ import Categories from "./categories/Categories";
 import Services from "./Services/Services";
 import Products from "./products/Products";
 import LatestNews from "./LatestNews/LatestNews";
+import About from "./About";
+
 
 export { Hero, Vision, Categories, Services, Products,  LatestNews,
+    About,
     
 };

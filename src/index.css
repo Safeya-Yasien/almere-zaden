@@ -20,3 +20,28 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+  width: 15px;
+  height: 15px;
+}
+@media (max-width: 991px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #fba43d;
+}
+
+.swiper-button-next {
+  right: 20px;
+}
+
+.swiper-button-prev {
+  left: 20px;
+}
