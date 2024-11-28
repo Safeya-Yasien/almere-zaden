@@ -1,12 +1,13 @@
 import logo from "@assets/images/logo.svg";
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <header className="sticky top-0 z-40">
       <nav className=" border-gray-200 px-4 lg:px-6 py-2.5 bg-[#000] h-[130px]">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-          <a href="#" className="flex items-center">
+          <Link to="/" className="flex items-center">
             <img src={logo} className="mr-3  h-24" alt="Flowbite Logo" />
-          </a>
+          </Link>
           <div className="flex items-center lg:order-2">
             <button
               data-collapse-toggle="mobile-menu-2"
@@ -50,13 +51,13 @@ const Header = () => {
           >
             <ul className="flex flex-col mt-4 font-medium text-[20px] lg:flex-row lg:space-x-8 lg:mt-0">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/"
                   className="block py-2 pr-4 pl-3 text-sunset-orange"
                   aria-current="page"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
                 <a
