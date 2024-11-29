@@ -1,6 +1,9 @@
 const ProductPage = () => {
   return (
-    <div>Product</div>
+    <div>
+      {/* hero section */}
+      {/* product card */}
+    </div>
   )
 }
 export default ProductPage

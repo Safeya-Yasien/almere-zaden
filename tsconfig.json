@@ -13,8 +13,8 @@
       "@components/*": ["./components/*"],
       "@layouts/*": ["./layouts/*"],
       "@lib/*": ["./lib/*"],
-      "@assets/*": ["./assets/*"]
+      "@assets/*": ["./assets/*"],
+      "@data/*": ["./data/*"]
     }
   }
-  
 }
