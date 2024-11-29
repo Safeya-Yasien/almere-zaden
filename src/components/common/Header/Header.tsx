@@ -1,9 +1,17 @@
 import { useState } from "react";
 import logo from "@assets/images/logo.svg";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const navItems = [
+    { label: "Home", path: "/" },
+    { label: "About", path: "/about" },
+    { label: "Products", path: "/products" },
+    { label: "Career", path: "/career" },
+    { label: "Contact", path: "contact" },
+  ];
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -11,7 +19,7 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50">
-      <nav className="border-gray-200 lg:px-6 py-2.5 bg-[#000] h-[130px] px-6 md:px-24">
+      <nav className="border-gray-200 lg:px-6 py-2.5 bg-[#1A660D] h-[130px] px-6 md:px-24">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           {/* Logo */}
           <Link to="/" className="flex items-center">
@@ -56,64 +64,28 @@ const Header = () => {
             </button>
           </div>
 
-
           {/* Main Navbar */}
           <div
             className={`${
-              isMenuOpen ? "block" : "hidden"
-            } justify-between items-center w-full lg:flex lg:w-auto lg:order-1 bg-[#000000ad] pl-[30px] mt-[30px] duration-75`}
+              isMenuOpen ? "block bg-[#000000ad] pl-[30px]" : "hidden"
+            } justify-between items-center w-full lg:flex lg:w-auto lg:order-1  mt-[30px] duration-75`}
             id="mobile-menu-2"
           >
             <ul className="flex flex-col mt-4 font-medium text-[20px] lg:flex-row lg:space-x-8 lg:mt-0">
-              <li>
-                <Link
-                  to="/"
-                  className="block py-2 pr-4 pl-3 text-sunset-orange"
-                  aria-current="page"
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block py-2 pr-4 pl-3 text-white hover:text-[#fba43d]"
-                >
-                  About
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block py-2 pr-4 pl-3 text-white hover:text-[#fba43d]"
-                >
-                  Products
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block py-2 pr-4 pl-3 text-white hover:text-[#fba43d]"
-                >
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block py-2 pr-4 pl-3 text-white hover:text-[#fba43d]"
-                >
-                  News
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block py-2 pr-4 pl-3 text-white hover:text-[#fba43d]"
-                >
-                  Contact
-                </a>
-              </li>
+              {navItems.map(({ label, path }) => (
+                <li key={label}>
+                  <NavLink
+                    to={path}
+                    className={({ isActive }) =>
+                      `block py-2 px-3 ${
+                        isActive ? "text-[#fba43d]" : "text-white"
+                      } hover:text-[#fba43d]`
+                    }
+                  >
+                    {label}
+                  </NavLink>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
@@ -123,8 +95,3 @@ const Header = () => {
 };
 
 export default Header;
-
-// background: #000000ad;
-// margin-top: 30px;
-// padding-left: 30px;
-// width: 100%;
