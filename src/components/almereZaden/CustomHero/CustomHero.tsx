@@ -13,7 +13,10 @@ const CustomHero = ({
   text-center flex items-center justify-center "
     >
       <div className="flex items-center justify-center gap-4 text-4xl text-white ">
-        <Link to={`/${prevPage.toLowerCase()}`} className="">
+        <Link
+          to={`/`}
+          className=""
+        >
           {prevPage}
         </Link>
         <span> / </span>

@@ -8,7 +8,7 @@ const About = () => {
         style={{ backgroundImage: `url(${aboutBg})` }}
       >
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6 ">
-          <div className="sm:pl-24 py-8">
+          <div className="p-4 sm:pl-24 py-8">
             <h2 className="text-sunset-orange text-[30px] font-bold mb-5">
               About Us
             </h2>
