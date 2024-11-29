@@ -11,28 +11,29 @@ const ProductPage = () => {
   }
 
   return (
-    <div>
+    <div className="">
       {/* Hero Section */}
-      <CustomHero prevPage="Home" currentPage={product.name} />
+      <CustomHero prevPage="Home" currentPage={`${product.name}`} />
 
       {/* Product Card */}
-      <div className="flex flex-col md:flex-row items-center gap-8 p-6">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-8 p-6 py-24">
         {/* Product Image */}
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-1/3">
           <img
             src={product.image}
             alt={product.name}
-            className="w-full rounded-md shadow-lg"
+            className="w-full rounded-md object-cover"
           />
         </div>
 
         {/* Product Information */}
         <div className="w-full md:w-1/2 space-y-4">
-          <h1 className="text-3xl font-bold">{product.name}</h1>
-          <p className="text-gray-700">{product.description}</p>
-          <span className="text-2xl font-semibold text-green-600">
-            {product.price}
-          </span>
+          <h1 className="text-3xl font-bold text-sunset-orange">
+            {product.name}
+          </h1>
+          <p className="text-gray-700 text-lg leading-8">
+            {product.description}
+          </p>
         </div>
       </div>
     </div>

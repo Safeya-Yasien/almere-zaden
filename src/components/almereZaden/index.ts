@@ -6,6 +6,8 @@ import Products from "./products/Products";
 import LatestNews from "./LatestNews/LatestNews";
 import About from "./About";
 import CustomHero from "./CustomHero/CustomHero";
+import OurGoals from "./OurGoals";
+import WhyChooseUs from "./WhyChooseUs";
 
 export {
   Hero,
@@ -16,4 +18,6 @@ export {
   LatestNews,
   About,
   CustomHero,
+  OurGoals,
+  WhyChooseUs,
 };

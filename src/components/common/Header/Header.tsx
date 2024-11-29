@@ -8,7 +8,6 @@ const Header = () => {
   const navItems = [
     { label: "Home", path: "/" },
     { label: "About", path: "/about" },
-    { label: "Products", path: "/products" },
     { label: "Career", path: "/career" },
     { label: "Contact", path: "contact" },
   ];
@@ -18,12 +17,12 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50">
-      <nav className="border-gray-200 lg:px-6 py-2.5 bg-[#1A660D] h-[130px] px-6 md:px-24">
+    <header className="sticky top-0 z-40 shadow-[0_5px_4px_-1px_rgba(145,158,171,0.2)]">
+      <nav className=" border-gray-200  px-4 lg:px-6  bg-[#fff] h-[80px]">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img src={logo} className="mr-3 h-24" alt="Logo" />
+            <img src={logo} className="mr-3  h-20" alt="Logo" />
           </Link>
 
           {/* Hamburger Button */}
@@ -67,8 +66,8 @@ const Header = () => {
           {/* Main Navbar */}
           <div
             className={`${
-              isMenuOpen ? "block bg-[#000000ad] pl-[30px]" : "hidden"
-            } justify-between items-center w-full lg:flex lg:w-auto lg:order-1  mt-[30px] duration-75`}
+              isMenuOpen ? "block" : "hidden"
+            } justify-between items-center w-full lg:flex lg:w-auto lg:order-1  pl-[30px] mt-[10px] duration-75 bg-white`}
             id="mobile-menu-2"
           >
             <ul className="flex flex-col mt-4 font-medium text-[20px] lg:flex-row lg:space-x-8 lg:mt-0">
@@ -78,8 +77,8 @@ const Header = () => {
                     to={path}
                     className={({ isActive }) =>
                       `block py-2 px-3 ${
-                        isActive ? "text-[#fba43d]" : "text-white"
-                      } hover:text-[#fba43d]`
+                        isActive ? "text-sunset-orange" : "text-[#145333]"
+                      } hover:text-[#145333]`
                     }
                   >
                     {label}

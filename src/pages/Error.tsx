@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 const Error = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 text-center">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 text-center gap-4">
       <h1 className="text-4xl font-bold text-red-600">
         Oops! Something went wrong.
       </h1>
@@ -8,12 +10,12 @@ const Error = () => {
         We're sorry, but we couldn't process your request. Please try again
         later.
       </p>
-      <button
-        onClick={() => window.location.reload()}
-        className="mt-6 px-6 py-3 text-white bg-blue-500 hover:bg-blue-600 rounded-lg shadow-md"
+      <Link
+        to={"/"}
+        className="bg-custom-green text-white px-4 py-2 rounded-md"
       >
-        Reload Page
-      </button>
+        Home
+      </Link>
     </div>
   );
 };
