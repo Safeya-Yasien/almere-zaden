@@ -2,7 +2,6 @@ import {
   About,
   Categories,
   Hero,
-  LatestNews,
   Products,
   Vision,
 } from "@/components/almereZaden";
@@ -16,7 +15,6 @@ const Home = () => {
         <Products />
         <About />
         <Vision />
-        <LatestNews />
       </div>
     </>
   );
