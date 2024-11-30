@@ -76,9 +76,13 @@ const Header = () => {
                   <NavLink
                     to={path}
                     className={({ isActive }) =>
-                      `block py-2 px-3 ${
-                        isActive ? "text-sunset-orange" : "text-[#145333]"
-                      } hover:text-[#145333]`
+                      `block py-2 px-3 relative transition-all before:duration-500
+                      before:content-[''] before:absolute before:bottom-0 before:left-0 before:bg-sunset-orange  before:h-[2px] 
+                     ${
+                       isActive
+                         ? "text-sunset-orange before:w-full"
+                         : "text-[#145333] before:w-0"
+                     } hover:text-sunset-orange hover:before:w-full`
                     }
                   >
                     {label}
