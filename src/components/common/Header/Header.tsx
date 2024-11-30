@@ -17,7 +17,7 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-40 shadow-[0_5px_4px_-1px_rgba(145,158,171,0.2)]">
+    <header className="fixed top-0 left-0 right-0 z-40 shadow-[0_5px_4px_-1px_rgba(145,158,171,0.2)]">
       <nav className=" border-gray-200  px-4 lg:px-6  bg-[#fff] h-[80px]">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           {/* Logo */}

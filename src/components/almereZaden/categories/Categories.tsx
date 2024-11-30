@@ -28,15 +28,15 @@ const Categories = () => {
         slidesPerView: 2,
         spaceBetween: 20,
       },
-      768: {
+      992: {
         slidesPerView: 3,
         spaceBetween: 20,
       },
-      1024: {
+      1200: {
         slidesPerView: 4,
         spaceBetween: 30,
       },
-      1280: {
+      1400: {
         slidesPerView: 5,
         spaceBetween: 40,
       },
