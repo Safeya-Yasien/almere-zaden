@@ -39,6 +39,7 @@ const About = () => {
             <img
               src={about}
               alt="About"
+              loading="lazy"
               className="w-full max-w-md object-cover rounded-lg shadow-md"
             />
           </div>

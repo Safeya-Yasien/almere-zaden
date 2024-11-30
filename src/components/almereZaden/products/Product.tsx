@@ -25,11 +25,13 @@ const Product = ({
           <img
             src={image}
             alt={name}
+            loading="lazy"
             className="object-cover hover:opacity-0 absolute z-10 transition-opacity duration-500 rounded-md w-full h-full"
           />
           <img
             src={hoverImage}
             alt={name}
+            loading="lazy"
             className="absolute object-cover rounded-md w-full h-full"
           />
         </div>

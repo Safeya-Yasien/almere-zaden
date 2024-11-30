@@ -14,6 +14,7 @@ const LatestNews = () => {
         <div className="w-full md:w-1/2">
           <img
             src={newsImage1}
+            loading="lazy"
             alt="Latest News 1"
             className="w-full h-auto rounded-lg shadow-md"
           />
@@ -40,6 +41,7 @@ const LatestNews = () => {
         <div className="w-full md:w-1/2">
           <img
             src={newsImage2}
+            loading="lazy"
             alt="Latest News 2"
             className="w-full h-auto rounded-lg shadow-md"
           />

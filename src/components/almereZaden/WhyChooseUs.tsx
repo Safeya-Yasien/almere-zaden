@@ -7,6 +7,7 @@ const WhyChooseUs = () => {
         <div className="w-full lg:w-1/2">
           <img
             src={AboutImage}
+            loading="lazy"
             alt="About Us - Almere Zaden"
             className="w-full h-auto max-h-[70vh] object-cover rounded-lg shadow-md"
           />

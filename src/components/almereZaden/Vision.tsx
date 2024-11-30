@@ -7,6 +7,7 @@ const Vision = () => {
         <img
           src={goal}
           alt="Goal"
+          loading="lazy"
           className="w-full max-w-md object-cover rounded-lg shadow-md"
         />
       </div>

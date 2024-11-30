@@ -22,6 +22,7 @@ const ProductPage = () => {
           <img
             src={product.image}
             alt={product.name}
+            loading="lazy"
             className="w-full rounded-md object-cover"
           />
         </div>
