@@ -17,6 +17,7 @@ const Hero = () => {
     <Swiper
       spaceBetween={30}
       navigation={true}
+      loop={true}
       modules={[Navigation]}
       className="w-[100%] h-[70vh] m-0"
     >
