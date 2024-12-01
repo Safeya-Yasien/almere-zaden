@@ -19,6 +19,7 @@ const Product = ({
     >
       <Link
         to={`products/${id}`}
+        aria-label={`View details about ${name}`}
         className="flex flex-col gap-4 border rounded-md "
       >
         <div className="relative w-full h-60">

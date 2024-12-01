@@ -8,6 +8,7 @@ const Header = () => {
   const navItems = [
     { label: "Home", path: "/" },
     { label: "About", path: "/about" },
+    { label: "Products", path: "/products" },
     { label: "Career", path: "/career" },
     { label: "Contact", path: "contact" },
   ];
@@ -75,6 +76,7 @@ const Header = () => {
                 <li key={label}>
                   <NavLink
                     to={path}
+                    onClick={toggleMenu}
                     className={({ isActive }) =>
                       `block py-2 px-3 relative transition-all before:duration-500
                       before:content-[''] before:absolute before:bottom-0 before:left-0 before:bg-sunset-orange  before:h-[2px] 

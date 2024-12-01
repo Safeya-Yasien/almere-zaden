@@ -7,16 +7,19 @@ const CustomHero = ({
   prevPage: string;
   currentPage: string;
 }) => {
+  let linkTo = `/${prevPage.toLowerCase()}`;
+
+  if (prevPage.toLocaleLowerCase() === "home") {
+    linkTo = "/";
+  }
+
   return (
     <div
       className="bg-[url('assets/images/single-product-page.webp')] bg-no-repeat bg-cover bg-center h-[250px]
   text-center flex items-center justify-center "
     >
       <div className="flex items-center justify-center gap-4 text-4xl text-white ">
-        <Link
-          to={`/`}
-          className=""
-        >
+        <Link to={linkTo} className="">
           {prevPage}
         </Link>
         <span> / </span>

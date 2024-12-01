@@ -8,6 +8,7 @@ import About from "./About";
 import CustomHero from "./CustomHero/CustomHero";
 import OurGoals from "./OurGoals";
 import WhyChooseUs from "./WhyChooseUs";
+import Product from "./products/Product";
 
 export {
   Hero,
@@ -19,5 +20,5 @@ export {
   About,
   CustomHero,
   OurGoals,
-  WhyChooseUs,
+  WhyChooseUs,Product
 };

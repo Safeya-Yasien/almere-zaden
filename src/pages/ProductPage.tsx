@@ -13,7 +13,7 @@ const ProductPage = () => {
   return (
     <div className="">
       {/* Hero Section */}
-      <CustomHero prevPage="Home" currentPage={`${product.name}`} />
+      <CustomHero prevPage="Products" currentPage={`${product.name}`} />
 
       {/* Product Card */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-8 p-6 py-24">
