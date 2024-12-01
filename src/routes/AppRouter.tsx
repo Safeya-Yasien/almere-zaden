@@ -1,5 +1,5 @@
 import MainLayout from "@/layouts/MainLayout";
-import { AboutPage, Error, Home, ProductPage } from "@/pages";
+import { AboutPage, Error, Home, ProductPage, ProductsPage } from "@/pages";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter(
@@ -20,6 +20,10 @@ const router = createBrowserRouter(
         {
           path: "products/:productId",
           element: <ProductPage />,
+        },
+        {
+          path: "products",
+          element: <ProductsPage />,
         },
       ],
     },
