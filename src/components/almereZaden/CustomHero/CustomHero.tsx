@@ -15,10 +15,11 @@ const CustomHero = ({
 
   return (
     <div
-      className="bg-[url('assets/images/single-product-page.webp')] bg-no-repeat bg-cover bg-center h-[250px]
-  text-center flex items-center justify-center "
+      className="bg-[url('assets/images/single-product-page.webp')] bg-no-repeat bg-cover bg-center 
+  text-center flex items-center justify-center
+  h-[250px] overflow-hidden "
     >
-      <div className="flex items-center justify-center gap-4 text-4xl text-white ">
+      <div className="h-full flex items-center justify-center gap-4 text-4xl text-white ">
         <Link to={linkTo} className="">
           {prevPage}
         </Link>

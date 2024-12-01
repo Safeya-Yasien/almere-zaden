@@ -19,7 +19,7 @@ const Hero = () => {
       navigation={true}
       loop={true}
       modules={[Navigation]}
-      className="w-[100%] h-[70vh] m-0"
+      className="w-[100%] m-0 h-[calc(100vh-80px)]"
     >
       <SwiperSlide>
         <SwiperSlice
@@ -65,7 +65,12 @@ export default Hero;
 const SwiperSlice = ({ image, text }: { image: string; text: string }) => {
   return (
     <div className="relative">
-      <img src={image} alt="swiper1" className="w-full h-[90vh] object-cover" loading="lazy"/>
+      <img
+        src={image}
+        alt="swiper1"
+        className="w-full h-[90vh] object-cover"
+        loading="lazy"
+      />
       <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
         <div className="p-4 rounded-md">
           <h2 className="text-white text-4xl font-bold text-center lg:w-[90%] ">

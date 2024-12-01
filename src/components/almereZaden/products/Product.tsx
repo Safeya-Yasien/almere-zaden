@@ -18,7 +18,7 @@ const Product = ({
      transition-all duration-500 hover:shadow-lg "
     >
       <Link
-        to={`products/${id}`}
+        to={`/products/${id}`}
         aria-label={`View details about ${name}`}
         className="flex flex-col gap-4 border rounded-md "
       >
